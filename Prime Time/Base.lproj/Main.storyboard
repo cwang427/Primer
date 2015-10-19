@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -18,17 +17,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="cXD-OR-77Q">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="cXD-OR-77Q">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <animations/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="WsE-52-v7u">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="WsE-52-v7u">
                                 <rect key="frame" x="130" y="40" width="340" height="227"/>
                                 <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="WsE-52-v7u" secondAttribute="height" multiplier="3:2" id="DUJ-ZN-dae"/>
-                                    <constraint firstAttribute="width" constant="340" id="G0f-0z-ncc"/>
-                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PRIMER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7DD-gA-Nms">
                                 <rect key="frame" x="187" y="110" width="226" height="79"/>
@@ -80,6 +75,12 @@
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cXD-OR-77Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EAt-GE-bAc"/>
+                            <constraint firstItem="cXD-OR-77Q" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="H9Z-si-ypi"/>
+                            <constraint firstItem="cXD-OR-77Q" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="SHU-Yb-W3o"/>
+                            <constraint firstItem="cXD-OR-77Q" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="n4L-vR-NY7"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="aboutButton" destination="TDZ-P7-Wu4" id="qZ6-Kc-mfR"/>
@@ -228,84 +229,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kvp-wu-doT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="316" y="1168"/>
-        </scene>
-        <!--Second View Controller-->
-        <scene sceneID="Ydt-NO-TF1">
-            <objects>
-                <viewController id="UTs-bf-Krc" customClass="SecondViewController" customModule="Primer" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Ek1-yP-rdj"/>
-                        <viewControllerLayoutGuide type="bottom" id="ldX-mn-ZPq"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="hlj-7Z-259">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iNa-Od-iXU">
-                                <rect key="frame" x="20" y="332" width="52" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Button1"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCb-Ga-lKp">
-                                <rect key="frame" x="20" y="386" width="173" height="31"/>
-                                <animations/>
-                                <state key="normal" title="Button5"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nY2-YW-rrA">
-                                <rect key="frame" x="326" y="386" width="46" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="button3:" destination="UTs-bf-Krc" eventType="touchUpInside" id="lZj-mh-7kz"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbB-9Q-jYi">
-                                <rect key="frame" x="453" y="386" width="46" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="button4:" destination="UTs-bf-Krc" eventType="touchUpInside" id="j8o-DP-CqR"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fac-Ru-C63">
-                                <rect key="frame" x="234" y="470" width="46" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="button5:" destination="UTs-bf-Krc" eventType="touchUpInside" id="3NA-2i-H3G"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5U-xb-rq1">
-                                <rect key="frame" x="100" y="332" width="55" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Button2"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m05-1q-Zr1">
-                                <rect key="frame" x="204" y="332" width="56" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Button4"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAQ-CV-Cno">
-                                <rect key="frame" x="172" y="386" width="55" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Button3"/>
-                            </button>
-                        </subviews>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="display1" destination="iNa-Od-iXU" id="iaw-3j-HOO"/>
-                        <outlet property="display2" destination="J5U-xb-rq1" id="EVp-8e-IUa"/>
-                        <outlet property="display3" destination="FAQ-CV-Cno" id="X1I-hJ-guo"/>
-                        <outlet property="display4" destination="m05-1q-Zr1" id="xdG-Wv-QYT"/>
-                        <outlet property="display5" destination="XCb-Ga-lKp" id="ZhQ-jc-4JE"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sOY-oM-2Et" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1237" y="1570"/>
         </scene>
         <!--End View Controller-->
         <scene sceneID="MT1-lx-Ejb">
