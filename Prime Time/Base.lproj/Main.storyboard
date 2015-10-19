@@ -21,26 +21,30 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <animations/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="WsE-52-v7u">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="WsE-52-v7u">
                                 <rect key="frame" x="130" y="40" width="340" height="227"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="340" id="dEm-vi-zzq"/>
+                                    <constraint firstAttribute="height" constant="227" id="mvf-AB-7rn"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PRIMER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7DD-gA-Nms">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRIMER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7DD-gA-Nms">
                                 <rect key="frame" x="187" y="110" width="226" height="79"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="66"/>
                                 <color key="textColor" red="0.27414757013320923" green="0.54287153482437134" blue="0.85072106122970581" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="a better kind of pregame" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLV-j5-Jx0">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="a better kind of pregame" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLV-j5-Jx0">
                                 <rect key="frame" x="190" y="180" width="220" height="24"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="0.27414757013320923" green="0.54287153482437134" blue="0.85072106122970581" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDZ-P7-Wu4">
-                                <rect key="frame" x="264" y="344" width="72" height="46"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDZ-P7-Wu4">
+                                <rect key="frame" x="264" y="275" width="72" height="46"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="about">
@@ -50,19 +54,8 @@
                                     <segue destination="fkY-aW-UHZ" kind="presentation" id="qeu-T1-vu3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPv-9a-9gE">
-                                <rect key="frame" x="254" y="390" width="92" height="72"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <state key="normal" title="play">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="TEO-wP-k20" kind="show" id="2P8-Ag-krx"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxP-5M-dSf">
-                                <rect key="frame" x="230" y="470" width="141" height="46"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxP-5M-dSf">
+                                <rect key="frame" x="230" y="401" width="141" height="46"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="scoreboard">
@@ -72,14 +65,38 @@
                                     <segue destination="A0r-qH-LxQ" kind="presentation" id="oak-xE-5k5"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPv-9a-9gE">
+                                <rect key="frame" x="254" y="325" width="92" height="72"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="play">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="TEO-wP-k20" kind="show" id="2P8-Ag-krx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="7DD-gA-Nms" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="90" id="76l-UC-JJA"/>
+                            <constraint firstItem="oxP-5M-dSf" firstAttribute="top" secondItem="wPv-9a-9gE" secondAttribute="bottom" constant="4" id="CTa-3l-BV3"/>
                             <constraint firstItem="cXD-OR-77Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EAt-GE-bAc"/>
                             <constraint firstItem="cXD-OR-77Q" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="H9Z-si-ypi"/>
+                            <constraint firstItem="oxP-5M-dSf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mal-p9-m6N"/>
+                            <constraint firstItem="GLV-j5-Jx0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="160" id="MdE-Xh-b0J"/>
+                            <constraint firstItem="TDZ-P7-Wu4" firstAttribute="top" secondItem="WsE-52-v7u" secondAttribute="bottom" constant="8" id="NDu-NV-c3u"/>
+                            <constraint firstItem="wPv-9a-9gE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PBC-pz-KEL"/>
                             <constraint firstItem="cXD-OR-77Q" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="SHU-Yb-W3o"/>
+                            <constraint firstItem="WsE-52-v7u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YW5-Vg-tTg"/>
+                            <constraint firstItem="GLV-j5-Jx0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aWI-4H-dzm"/>
+                            <constraint firstItem="WsE-52-v7u" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="cW9-SK-O2p"/>
+                            <constraint firstItem="wPv-9a-9gE" firstAttribute="top" secondItem="TDZ-P7-Wu4" secondAttribute="bottom" constant="4" id="dXg-kB-6fl"/>
+                            <constraint firstItem="TDZ-P7-Wu4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e99-gI-inM"/>
+                            <constraint firstItem="oxP-5M-dSf" firstAttribute="top" secondItem="wPv-9a-9gE" secondAttribute="bottom" constant="4" id="fCo-uk-1Wz"/>
                             <constraint firstItem="cXD-OR-77Q" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="n4L-vR-NY7"/>
+                            <constraint firstItem="7DD-gA-Nms" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v0i-2u-aDS"/>
                         </constraints>
                     </view>
                     <connections>
