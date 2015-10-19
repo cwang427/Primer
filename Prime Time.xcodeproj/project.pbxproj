@@ -206,11 +206,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0700;
-				ORGANIZATIONNAME = "Yido Jang";
+				ORGANIZATIONNAME = "Cassidy Wang";
 				TargetAttributes = {
 					F1D0B3161BD349F700085494 = {
 						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = W8HC4KXWEQ;
+						DevelopmentTeam = 7H6UJAR6U8;
 					};
 					F1D0B32A1BD349F700085494 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -421,11 +421,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Prime Time/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yidojang.Prime-Time";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cassidywang.Prime-Time";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -435,11 +434,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Prime Time/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yidojang.Prime-Time";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cassidywang.Prime-Time";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -451,7 +449,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Prime TimeTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yidojang.Prime-TimeTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cassidywang.Prime-TimeTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Prime Time.app/Prime Time";
 			};
@@ -463,7 +461,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Prime TimeTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yidojang.Prime-TimeTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cassidywang.Prime-TimeTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Prime Time.app/Prime Time";
 			};
@@ -474,7 +472,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = "Prime TimeUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yidojang.Prime-TimeUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cassidywang.Prime-TimeUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = "Prime Time";
 				USES_XCTRUNNER = YES;
@@ -486,7 +484,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = "Prime TimeUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yidojang.Prime-TimeUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cassidywang.Prime-TimeUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = "Prime Time";
 				USES_XCTRUNNER = YES;
